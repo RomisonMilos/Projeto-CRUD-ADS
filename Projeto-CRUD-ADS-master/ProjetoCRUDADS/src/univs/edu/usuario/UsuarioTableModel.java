@@ -13,10 +13,6 @@ public class UsuarioTableModel extends AbstractTableModel {
         this.usuarios = usuarios;
     }
 
-    public UsuarioTableModel() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     @Override
     public int getRowCount() {
         return usuarios.size();
@@ -45,16 +41,15 @@ public class UsuarioTableModel extends AbstractTableModel {
 
     public String getColumnName(int index) {
         switch (index) {
-
             case 0:
                 return colunas[0];
-            case 1:               
+            case 1:
                 return colunas[1];
             case 2:
-                
                 return colunas[2];
             case 3:
                 return colunas[3];
+
         }
         return null;
     }
